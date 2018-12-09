@@ -14,7 +14,8 @@ app.config['JSON_AS_ASCII'] = False
 
 def init(model_path):
     global model
-    model = Predictor(model_path=model_path)
+    with graph.as_default():
+        model = Predictor(model_path=model_path)
     print('Initialized the model!', flush=True)
 
 
