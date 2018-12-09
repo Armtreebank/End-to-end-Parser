@@ -1,0 +1,61 @@
+/* words */
+.displacy-word, .displacy-tag, .displacy-label {
+    font: 15px Helvetica, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.displacy-tag[data-tag^="NOUN"] {color: #FD9720}
+.displacy-tag[data-tag^='PROPN'] {color: #e00800}
+.displacy-tag[data-tag^="ADJ"] {color: #99ab92}
+.displacy-tag[data-tag^='PRON'] {color: #A6E22C}
+.displacy-tag[data-tag^='DET'] {color: #3ee212}
+.displacy-tag[data-tag^='NUM'] {color: #000000}
+.displacy-tag[data-tag^='ADV'] {color: #257430}
+.displacy-tag[data-tag^='VERB'] {color: #E00184}
+.displacy-tag[data-tag^='ADP'] {color: #5d1a3c}
+.displacy-tag[data-tag^='SCONJ'] {color: #25349d}
+.displacy-tag[data-tag^='CCONJ'] {color: #259499}
+.displacy-tag[data-tag^="PART"] {color: #ffff00}
+.displacy-tag[data-tag^="INTJ"] {color: #729b12}
+.displacy-tag[data-tag^="PUNCT"] {color: #009dff}
+.displacy-tag[data-tag^="AUX"] {color: #695EAB}
+
+
+/* arrows */
+.displacy-arrowhead, .displacy-arrow {
+    color: #879089;
+}
+
+
+/* Search box */
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #455a64;
+}
+.search-box {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+}
+.search-box input {
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    background: #546e7a;
+    border:0;
+    outline: none !important;
+    transition: all 0.2s linear;
+    font-size: 100%;
+    padding: 10px;
+    border-radius: 4px;
+}
+.search-box input:focus {
+    background: #fff !important;
+    outline: 0;
+    color: #333;
+}
+.search-box input:hover {
+    background: #78909c;
+}

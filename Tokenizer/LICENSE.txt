@@ -1,0 +1,4 @@
+The tokenizer is licensed under the Creative Commons License Attribution-ShareAlike 4.0 International as a part of ՀայՇտեմ - ArmDT-East project.
+
+The complete license text is available at:
+http://creativecommons.org/licenses/by-sa/4.0/legalcode

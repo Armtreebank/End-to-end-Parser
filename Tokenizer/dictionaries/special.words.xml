@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<specialWords>
+  <unit lang="hy">
+    <cat>firstname</cat>
+    <p>Գոռ</p>
+  </unit>
+  <unit lang="hy">
+    <cat>lastname</cat>
+    <p>Առաքելյան</p>
+  </unit>
+</specialWords>

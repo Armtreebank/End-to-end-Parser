@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<symbols>
+  <unit lang="inter">
+    <cat>currency</cat>
+    <p title="dollar">$</p>
+  </unit>
+  <unit lang="inter">
+    <cat>dimension</cat>
+    <p title="celsius">°C</p>
+  </unit>
+</symbols>
