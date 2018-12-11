@@ -15,6 +15,13 @@ This repository contains necessary tools to parse raw Eastern Armenian text. It 
 | Dependency parsing (Labelled attachment score) | 55.25% |
 
 
+### Visualization of the current parser
+The model is hosted on the AWS Elastic Beanstalk: <br />
+http://end-to-end-parser-env.xthmm3wv2n.us-west-2.elasticbeanstalk.com/
+![alt text](https://i.imgur.com/EPs4x14.png "Visualization")
+
+
+
 ### Instructions (for End to end parsing)
 
 * Make sure you have all the requirements installed

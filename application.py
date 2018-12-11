@@ -8,8 +8,8 @@ import tensorflow as tf
 
 graph = tf.get_default_graph()
 model = None
-app = Flask(__name__, static_url_path='')
-app.config['JSON_AS_ASCII'] = False
+application = Flask(__name__, static_url_path='')
+application.config['JSON_AS_ASCII'] = False
 
 
 def init(model_path):
@@ -23,12 +23,12 @@ t = Thread(target=init, args=('model.pkl',))
 t.start()
 
 
-@app.route('/')
+@application.route('/')
 def index():
-    return app.send_static_file('index.html')
+    return application.send_static_file('index.html')
 
 
-@app.route('/process', methods=['POST'])
+@application.route('/process', methods=['POST'])
 def process():
     if model is None:
         raise Exception('Model not initialized yet')
@@ -40,4 +40,4 @@ def process():
 
 
 if __name__ == '__main__':
-    app.run()
+    application.run()
