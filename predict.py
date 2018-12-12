@@ -96,7 +96,7 @@ class Predictor(object):
             res['arcs'].append({'start': start + small - 1,
                                 'end': start + big - 1,
                                 'label': parts[7],
-                                'dir': 'right' if small == start_i else 'left'})
+                                'dir': 'left' if small == start_i else 'right'})
         return res
 
 
