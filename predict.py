@@ -92,10 +92,11 @@ class Predictor(object):
             if end_i == 0:
                 continue
 
-            res['arcs'].append({'start': start + start_i - 1,
-                                'end': start + end_i - 1,
+            [small, big] = sorted((start_i, end_i))
+            res['arcs'].append({'start': start + small - 1,
+                                'end': start + big - 1,
                                 'label': parts[7],
-                                'dir': 'right' if end_i > start_i else 'left'})
+                                'dir': 'right' if small == start_i else 'left'})
         return res
 
 
