@@ -97,6 +97,9 @@ class Predictor(object):
                                 'end': start + big - 1,
                                 'label': parts[7],
                                 'dir': 'left' if small == start_i else 'right'})
+
+        if input_text != '' and len(res['words']) == 0:
+            raise ValueError("Couldn't tokenize the text")
         return res
 
 

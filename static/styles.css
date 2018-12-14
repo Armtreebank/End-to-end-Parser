@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee");
+
+
 /* words */
 .displacy-word, .displacy-tag, .displacy-label {
     font: 15px Helvetica, Arial, sans-serif;
@@ -32,6 +35,10 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     background: #455a64;
+    color: white;
+    font-family: "Bungee", cursive;
+    margin-top: 50px;
+    text-align: center;
 }
 .search-box {
     position: relative;
@@ -58,6 +65,21 @@ body {
 }
 .search-box input:hover {
     background: #78909c;
+}
+
+/* Footer */
+#footer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    left:0;
+    background: #282a34;
+}
+#footer p{
+    font: 12px Helvetica, Arial, sans-serif;
+    padding: 10px 20px;
+    margin:0;
+    text-align:center;
 }
 
 
@@ -97,5 +119,38 @@ body {
 .inner {
     margin-left: auto;
     margin-right: auto;
-    width: 25em;
+    width: 30em;
 }
+
+
+/* Error */
+#error a {
+  color: #2aa7cc;
+  text-decoration: none;
+}
+#error a:hover {
+  color: white;
+}
+#error svg {
+	max-width: 25em;
+}
+.lightblue {
+  fill: #444;
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.eye {
+    cx: calc(115px + 30px * var(--mouse-x));
+    cy: calc(50px + 30px * var(--mouse-y));
+}
+#eye-wrap {
+    overflow: hidden;
+}
+.error-text {
+    font-size: 120px;
+}
+.alarm {
+    animation: alarmOn 0.5s infinite;
+}
+
+@keyframes alarmOn { to {fill: darkred;} }

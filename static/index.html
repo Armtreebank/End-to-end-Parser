@@ -26,10 +26,47 @@
   </div>
 </div>
 
+<div class="outer" id="error">
+  <div class="middle">
+    <div class="inner">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="robot-error"
+             viewBox="0 0 260 118.9">
+            <defs>
+                <clipPath id="white-clip">
+                    <circle id="white-eye" fill="#cacaca" cx="130" cy="65" r="20"></circle>
+                </clipPath>
+                <text id="text-s" class="error-text" y="106">400</text>
+            </defs>
+            <path class="alarm" fill="#e62326" d="M120.9 19.6V9.1c0-5 4.1-9.1 9.1-9.1h0c5 0 9.1 4.1 9.1 9.1v10.6"></path>
+            <use xlink:href="#text-s" x="-0.5px" y="-1px" fill="black"></use>
+            <use xlink:href="#text-s" fill="#2b2b2b"></use>
+            <g id="robot">
+                <g id="eye-wrap">
+                    <use xlink:href="#white-eye"></use>
+                    <circle id="eyef" class="eye" clip-path="url(#white-clip)" fill="#000" stroke="#2aa7cc" stroke-width="2" stroke-miterlimit="10" cx="130" cy="65" r="11"></circle>
+                    <ellipse id="white-eye" fill="#2b2b2b" cx="130" cy="40" rx="18" ry="12"></ellipse>
+                </g>
+                <circle class="lightblue" cx="105" cy="32" r="2.5" id="tornillo"></circle>
+                <use xlink:href="#tornillo" x="50"></use>
+                <use xlink:href="#tornillo" x="50" y="60"></use>
+                <use xlink:href="#tornillo" y="60"></use>
+            </g>
+        </svg>
+
+        <h1>Something went wrong</h1>
+        <h3>Please try again with another text</h3>
+    </div>
+  </div>
+</div>
+
 <div class="search-box">
     <input id='input' value="Իմանալ հանճարների գործը։" type="text" class="form-control"  title="input"/>
 </div>
 
 <div id="displacy"></div>
+
+<div id="footer">
+    <p>This parser is developed as part of the <a href="https://armtreebank.yerevann.com/">ArmTreebank project</a>. It attempts to parse Eastern Armenian text according to the <a href="http://universaldependencies.org/hy/index.html">UD standards</a>. It is based on a neural parser <a href="https://github.com/360er0/COMBO">COMBO</a> trained on the <a href="https://github.com/UniversalDependencies/UD_Armenian-ArmTDP">ArmTDP treebank from UD v2.3</a>. See more on <a href="https://github.com/Armtreebank/End-to-end-Parser">GitHub</a>.</p>
+</div>
 </body>
 </html>
