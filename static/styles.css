@@ -68,20 +68,22 @@ body {
 }
 
 /* Footer */
-#footer{
+#footer {
     position: fixed;
     bottom:0;
     width:100%;
     left:0;
     background: #282a34;
 }
-#footer p{
+#footer p {
     font: 12px Helvetica, Arial, sans-serif;
     padding: 10px 20px;
     margin:0;
     text-align:center;
 }
-
+#footer p a {
+    color:white
+}
 
 /* Loading */
 #progress svg {

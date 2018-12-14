@@ -4,7 +4,7 @@ window.onload = function() {
     const displacy = new displaCy('/', {
         container: '#displacy',
         format: "spacy",
-        distance: 250,
+        distance: 150,
         offsetX: 100,
         bg: "#455a64",
         color: "#fff",
