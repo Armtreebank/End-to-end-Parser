@@ -16,8 +16,8 @@ This repository contains necessary tools to parse raw Eastern Armenian text. It 
 
 
 ### Visualization of the current parser
-The model is hosted on the AWS Elastic Beanstalk: <br />
-http://end-to-end-parser-env.xthmm3wv2n.us-west-2.elasticbeanstalk.com/
+The model is hosted on DigitalOcean: https://parser.yerevann.com/
+
 ![alt text](https://i.imgur.com/rO9IZ7d.jpg "Visualization")
 
 
