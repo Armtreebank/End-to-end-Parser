@@ -52,6 +52,7 @@ window.onload = function() {
 
 
     ////////////////////////// Error ////////////////////////
+    $("#error").hide();
     const root = document.documentElement;
     const eyef = document.getElementById('eyef');
     let cx = document.getElementById("eyef").getAttribute("cx");
